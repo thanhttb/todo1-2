@@ -24,7 +24,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-mongoose.connect('mongodb://pnh:pnhoang@ds159050.mlab.com:59050/pnh-db');
+mongoose.connect('mongodb://heroku_g5zs1nsn:q7um57jtt9iiv7f9puc517a73m@ds123311.mlab.com:23311/heroku_g5zs1nsn');
 mongoose.connection.on('connected', function() {
   console.log('Connected to MongoDB');
 });
